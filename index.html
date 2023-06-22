@@ -29,7 +29,7 @@ var visitors = sessionStorage.getItem('visitors');
 if(!visitors){
 visitors = 1;
 }else{
-visitors = parseInt(visitors) + 1;
+visitors = parseInt(visitors);
 }
 sessionStorage.setItem('visitors', visitors);
 </script>
