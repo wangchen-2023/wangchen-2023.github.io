@@ -22,6 +22,39 @@
 <p>啊，抱歉！没看到你来</p>
 <p>你好！你可以用则个链接联系我，是b站啊！</p>
 
+
+<head>
+    <title>访问人数统计</title>
+    <script type="text/javascript">
+        var visitors = localStorage.getItem('visitors');
+        if(!visitors){
+            visitors = 1;
+        }else{
+            visitors = parseInt(visitors) + 1;
+        }
+        localStorage.setItem('visitors', visitors);
+    </script>
+    <style type="text/css">
+        #visitor-count{
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="visitor-count">您是第<span id="visitor-number"></span>位访客！</div>
+    <script type="text/javascript">
+        document.getElementById('visitor-number').innerHTML = localStorage.getItem('visitors');
+    </script>
+</body>
+
+
 <!-- windows10破10亿音乐 -->
 <div style="position:relative;">
   <audio controls="controls" loop="loop">
@@ -80,9 +113,3 @@
 </ul>
 
 <p>c，！《html，当跳转一个网站，新创建一个页面》<br>然后<br>变成了这样 <strong>aaaaaaa</strong>.</p>
-
-<div style="text-align: center;">
-<h1>访问人数统计</h1>
-<p>当前访问人数: <?php echo getVisitorCount(); ?></p>
-<p>您的IP地址: <?php echo getClientIp(); ?></p>
-</div>
