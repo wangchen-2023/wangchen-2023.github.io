@@ -24,34 +24,33 @@
 
 
 <head>
-    <title>访问人数统计</title>
-    <script type="text/javascript">
-        var visitors = localStorage.getItem('visitors');
-        if(!visitors){
-            visitors = 1;
-        }else{
-            visitors = parseInt(visitors) + 1;
-        }
-        localStorage.setItem('visitors', visitors);
-    </script>
-    <style type="text/css">
-        #visitor-count{
-            position: fixed;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            font-size: 16px;
-        }
-    </style>
+<script type="text/javascript">
+var visitors = sessionStorage.getItem('visitors');
+if(!visitors){
+visitors = 1;
+}else{
+visitors = parseInt(visitors) + 1;
+}
+sessionStorage.setItem('visitors', visitors);
+</script>
+<style type="text/css">
+#visitor-count{
+position: fixed;
+top: 50%;
+right: 0;
+transform: translateY(-50%);
+background-color: #333;
+color: #fff;
+padding: 10px;
+font-size: 16px;
+}
+</style>
 </head>
 <body>
-    <div id="visitor-count">您是第<span id="visitor-number"></span>位访客！</div>
-    <script type="text/javascript">
-        document.getElementById('visitor-number').innerHTML = localStorage.getItem('visitors');
-    </script>
+<div id="visitor-count">您是第<span id="visitor-number"></span>位访客！</div>
+<script type="text/javascript">
+document.getElementById('visitor-number').innerHTML = sessionStorage.getItem('visitors');
+</script>
 </body>
 
 
