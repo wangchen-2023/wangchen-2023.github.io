@@ -62,13 +62,15 @@
         .text {
             text-align: center;
         }
-    
+        .container {
+            position: relative;
+        }
     </style>
     <script>
         function moveImages() {
             var distance = document.getElementById("distance").value;
             var container = document.getElementById("container");
-            container.style.top = distance + "px";
+            container.style.tcp = distance + "px";
         }
     </script>
 </head>
