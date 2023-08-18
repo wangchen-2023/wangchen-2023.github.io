@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--<title>快来起名！！awa</title>-->
+    <title>快来起名！！awa</title>
     <style>
         .small-image {
             width: 200px; /* 设置图片宽度 */
@@ -10,9 +10,8 @@
         body {
             background-color: black;
         }
-       /*  .container {
+        .container {
             position: relative;
-            top: 50px; /* 控制图片整体向下移动的距离 
         }
         .text {
             position: absolute;
@@ -20,12 +19,6 @@
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
-        }*/
-
-
-         <style>
-        .container {
-            position: relative;
         }
     </style>
     <script>
@@ -37,17 +30,9 @@
     </script>
 </head>
 <body>
-   
-
-
-        
-    </style>
-</head>
-<body>
-    <div class="container">
+    <input type="range" min="0" max="200" value="0" id="distance" oninput="moveImages()">
+    <div class="container" id="container">
         <div class="text">whisoul</div>
-         <input type="range" min="0" max="200" value="0" id="distance" oninput="moveImages()">
-         <div class="container" id="container">
         <img src="瓦拉屌图/7.jpg" class="small-image">
         <img src="瓦拉屌图/4.jpg" class="small-image">
         <img src="瓦拉屌图/6.jpg" class="small-image">
@@ -61,8 +46,8 @@
         <img src="瓦拉屌图/15.jpg" class="small-image">
         <img src="瓦拉屌图/13.jpg" class="small-image">
         <img src="瓦拉屌图/1.jpg" class="small-image">
-        <img src="瓦拉屌图/11.jpg" class="small-image">
-        <img src="瓦拉屌图/14.jpg" class="small-image">
+        <img src="瓦拉屌图/11.jpg" class=“small-image”>
+        <img src="瓦拉屌图/14.jpg" class=“small-image”>
     </div>
 </body>
 </html>
