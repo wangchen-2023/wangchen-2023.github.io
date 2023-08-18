@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>都来想名字！！！</title>
+    <!--<title>快来起名！！awa</title>-->
     <style>
         .small-image {
             width: 200px; /* 设置图片宽度 */
@@ -9,11 +9,10 @@
         }
         body {
             background-color: black;
-            color: white;
         }
-        .container {
+       /*  .container {
             position: relative;
-            top: 50px; /* 控制图片整体向下移动的距离 */
+            top: 50px; /* 控制图片整体向下移动的距离 
         }
         .text {
             position: absolute;
@@ -21,7 +20,28 @@
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
+        }*/
+
+
+         <style>
+        .container {
+            position: relative;
         }
+    </style>
+    <script>
+        function moveImages() {
+            var distance = document.getElementById("distance").value;
+            var container = document.getElementById("container");
+            container.style.top = distance + "px";
+        }
+    </script>
+</head>
+<body>
+    <input type="range" min="0" max="200" value="0" id="distance" oninput="moveImages()">
+    <div class="container" id="container">
+
+
+        
     </style>
 </head>
 <body>
