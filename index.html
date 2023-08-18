@@ -15,6 +15,13 @@
             text-align: center;
         }
     </style>
+    <script>
+        function moveImages() {
+            var distance = document.getElementById("distance").value;
+            var container = document.getElementById("container");
+            container.style.top = distance + "px";
+        }
+    </script>
 </head>
 <body>
     <div class="text">这里是您想要显示的文字</div>
