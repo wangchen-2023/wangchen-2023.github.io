@@ -2,27 +2,23 @@
 <html>
 <head>
    <!-- <title>快来改名！！awa</title> -->.
+     <script>
+     window.onfocus = function() {
+         document.title = "114514";
+     };
 
-
-<script>
-        // 监听页面焦点状态改变事件
-        document.addEventListener("visibilitychange", function() {
-            var pageTitle = document.getElementById("pageTitle");
-            if (document.hidden) {
-                pageTitle.innerHTML = "1919810"; // 移动到其他网页，显示 "1919810"
-            } else {
-                pageTitle.innerHTML = "114514"; // 用户回到本网页，显示 "114514"
-            }
-        });
-    </script>
-
-
-
-   
+     window.onblur = function() {
+         document.title = "1919810";
+     };
+ </script>
     <style>
         .small-image {
             width: 200px; /* 设置图片宽度 */
             height: auto; /* 让高度自动调整，保持纵横比 */
+        }
+       }
+        body {
+            background-color: black;
         }
     </style>
 </head>
