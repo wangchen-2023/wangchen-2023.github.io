@@ -14,24 +14,36 @@
         .text {
             text-align: center;
         }
+        .container {
+            position: relative;
+        }
     </style>
+    <script>
+        function moveImages() {
+            var distance = document.getElementById("distance").value;
+            var container = document.getElementById("container");
+            container.style.top = distance + "px";
+        }
+    </script>
 </head>
 <body>
-    <div class="text">whisoul</div>
-    <img src="瓦拉屌图/7.jpg" class="small-image">
-    <img src="瓦拉屌图/4.jpg" class="small-image">
-    <img src="瓦拉屌图/6.jpg" class="small-image">
-    <img src="瓦拉屌图/3.jpg" class="small-image">
-    <img src="瓦拉屌图/9.jpg" class="small-image">
-    <img src="瓦拉屌图/5.jpg" class="small-image">
-    <img src="瓦拉屌图/2.jpg" class="small-image">
-    <img src="瓦拉屌图/8.jpg" class="small-image">
-    <img src="瓦拉屌图/10.jpg" class="small-image">
-    <img src="瓦拉屌图/12.jpg" class="small-image">
-    <img src="瓦拉屌图/15.jpg" class="small-image">
-    <img src="瓦拉屌图/13.jpg" class="small-image">
-    <img src="瓦拉屌图/1.jpg" class="small-image">
-    <img src="瓦拉屌图/11.jpg" class=“small-image">
-  <div class="text">这里是您想要显示的文字</div>
+    <div class="text">这里是您想要显示的文字</div>
+    <input type="range" min="0" max="200" value="0" id="distance" oninput="moveImages()">
+    <div class="container" id="container">
+        <img src="瓦拉屌图/7.jpg" class="small-image">
+        <img src="瓦拉屌图/4.jpg" class="small-image">
+        <img src="瓦拉屌图/6.jpg" class="small-image">
+        <img src="瓦拉屌图/3.jpg" class="small-image">
+        <img src="瓦拉屌图/9.jpg" class="small-image">
+        <img src="瓦拉屌图/5.jpg" class="small-image">
+        <img src="瓦拉屌图/2.jpg" class="small-image">
+        <img src="瓦拉屌图/8.jpg" class="small-image">
+        <img src="瓦拉屌图/10.jpg" class="small-image">
+        <img src="瓦拉屌图/12.jpg" class="small-image">
+        <img src="瓦拉屌图/15.jpg" class="small-image">
+        <img src="瓦拉屌图/13.jpg" class="small-image">
+        <img src="瓦拉屌图/1.jpg" class="small-image">
+        <img src="瓦拉屌图/11.jpg" class=“small-image">
+    </div>
 </body>
 </html>
