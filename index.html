@@ -10,29 +10,6 @@
         body {
             background-color: black;
         }
-        .container {
-            position: relative;
-        }
-        .text {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-        }
-    </style>
-    <script>
-        function moveImages() {
-            var distance = document.getElementById("distance").value;
-            var container = document.getElementById("container");
-            container.style.top = distance + "px";
-        }
-    </script>
-</head>
-<body>
-    <input type="range" min="0" max="200" value="0" id="distance" oninput="moveImages()">
-    <div class="container" id="container">
-        <div class="text">whisoul</div>
         <img src="瓦拉屌图/7.jpg" class="small-image">
         <img src="瓦拉屌图/4.jpg" class="small-image">
         <img src="瓦拉屌图/6.jpg" class="small-image">
