@@ -43,10 +43,20 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Music Sharing</title>
+<style>
+  /* 添加样式以设置顶部边距 */
+  #musicPlayer {
+    margin-top: 30px; /* 你可以根据需要调整这个值 */
+  }
+</style>
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 
-src="https://music.163.com/outchain/player?type=4&id=994974327&auto=0&height=90"></iframe>
 </head>
+<body>
+  <!-- 在这里包裹你的iframe，并为其添加一个ID -->
+  <div id="musicPlayer">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="110" src="https://music.163.com/outchain/player?type=4&id=994974327&auto=0&height=90"></iframe>
+  </div>
+</body>
+
 
 </html>
