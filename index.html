@@ -68,7 +68,12 @@
      #charuwangye {
         margin-top: 439px;
         margin-left: 10px;
-     }
+      }
+     #114514 {
+        margin-top: 439px;
+        margin-left: 10px;
+      }
+    
 
 
 </style> 
@@ -98,23 +103,19 @@
     </div>
 </body>
 
-    <p><a href="javascript:void(0);" onclick="playAudio()">点击播放音频</a></p>
+  <div id="114514"> 
+    <p><a href="javascript:void(0);" onclick="playAudio()" style="background-image: linear-gradient( 135deg, #F6D242 10%, #FF52E5 100%);">点击播放音频</a></p>
     
     <audio id="myAudio">
         <source src="audio/114514.mp3" type="audio/mpeg">
     </audio>
 
     <script>
-        function playAudio() {
-            var audio = document.getElementById("myAudio");
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
-        }
+        function playAudio() { var audio = document.getElementById("myAudio");
+            if (audio.paused) { audio.play(); }  else { audio.pause(); }}
     </script>
-  
+  </div>
+        
 <!--   <div style="position: relative; top: -450px;"> -->
   <div id="charuwangye"> 
    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="740" height="560" 
