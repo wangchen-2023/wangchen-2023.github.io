@@ -31,6 +31,7 @@
         }
     </style>
 </head>
+  
 <body>
      <img src="瓦拉屌图/7.jpg" class="small-image">
      <img src="瓦拉屌图/4.jpg" class="small-image">
@@ -69,7 +70,12 @@
         margin-left: 10px;
      }
 
-</style>
+   /* 为 #clickMe 元素设置文本颜色 */
+   #clickMe {
+       color: black; /* 这里将文本颜色设置为红色 */
+   }
+
+</style> 
 </head>
 <body>
    
@@ -96,6 +102,28 @@
     </div>
 </body>
 
+    <!-- 创建一个可点击的文本 -->
+    <a href="#" id="clickMe">不要盗图</a>
+
+    <!-- 创建一个音频元素并设置隐藏 -->
+    <audio id="myAudio" style="display:none">
+        <source src="114514.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // 获取点击文本的引用
+        const clickMe = document.getElementById("clickMe");
+
+        // 获取音频元素的引用
+        const audio = document.getElementById("myAudio");
+
+        // 添加点击事件处理程序
+        clickMe.addEventListener("click", function() {
+            // 播放音频
+            audio.play();
+        });
+    </script>
+  
 <!--   <div style="position: relative; top: -450px;"> -->
   <div id="charuwangye"> 
    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="740" height="560" 
