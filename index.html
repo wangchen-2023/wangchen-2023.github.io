@@ -70,10 +70,6 @@
         margin-left: 10px;
      }
 
-   /* 为 #clickMe 元素设置文本颜色 */
-   #clickMe {
-       color: black; /* 这里将文本颜色设置为红色 */
-   }
 
 </style> 
 </head>
@@ -102,26 +98,23 @@
     </div>
 </body>
 
-    <!-- 创建一个可点击的文本 -->
-    <a href="#" id="clickMe">不要盗图</a>
-
-    <!-- 创建一个音频元素并设置隐藏 -->
-    <audio id="myAudio" style="display:none">
+   <p>点击下面的文字播放音频：</p>
+    <p><a href="javascript:void(0);" onclick="playAudio()">点击播放音频</a></p>
+    
+    <audio id="myAudio">
         <source src="114514.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
 
     <script>
-        // 获取点击文本的引用
-        const clickMe = document.getElementById("clickMe");
-
-        // 获取音频元素的引用
-        const audio = document.getElementById("myAudio");
-
-        // 添加点击事件处理程序
-        clickMe.addEventListener("click", function() {
-            // 播放音频
-            audio.play();
-        });
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
     </script>
   
 <!--   <div style="position: relative; top: -450px;"> -->
